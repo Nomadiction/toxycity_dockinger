@@ -1,0 +1,45 @@
+=== ANALYSIS OF USED APIs ===
+
+1. PUBMED API (E-utilities)
+What it provides:
+- Access to over 34 million scientific articles on medicine
+- Search by title, abstract, keywords
+- Article metadata (authors, journals, publication dates)
+- Ability to obtain full-text articles (via PMC)
+
+Limitations:
+- Without an API key: maximum of 3 requests per second
+- With an API key: up to 10 requests per second
+- Timeouts: up to 30-40 seconds for complex queries
+- Not all articles are available in full text
+- Search only by indexed fields
+
+Response fields:
+- PMID (unique article ID)
+- Article title
+- Journal title
+- Publication date
+- Authors (when requesting detailed information)
+- Abstract (when requesting detailed information)
+
+2. PUBCHEM API
+What it provides:
+- Information on 100+ million chemical compounds
+- Chemical properties, structures, synonyms
+- Biological activity and toxicological data
+- Links to other databases (DrugBank, ChEMBL)
+
+Limitations:
+- More lenient speed limits (up to 5 requests per second)
+- Some compounds may be missing
+- Not all drugs have trade names in the database
+- Limited information on clinical toxicity
+
+Response fields:
+- CID (Compound ID)
+- Chemical formula
+- Molecular weight
+- Synonyms and trade names
+- Toxicological data (if available)
+
+
